@@ -42,3 +42,7 @@ def adicionar_frutas():
     frutas.append(nova_fruta)
 
     return jsonify(nova_fruta)
+
+
+
+app.run(port=3000, host='localhost', debug=True)
