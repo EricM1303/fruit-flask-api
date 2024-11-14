@@ -22,3 +22,8 @@ frutas = [
         'quantidade': 8
     }
 ]
+
+# Listar todos os itens
+@app.route('/frutas', methods=['GET']) # Metódo para listar frutas
+def mostrar_todas_frutas():
+    return jsonify(frutas) # Retorna a lista como JSON
