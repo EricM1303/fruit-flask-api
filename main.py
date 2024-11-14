@@ -27,3 +27,10 @@ frutas = [
 @app.route('/frutas', methods=['GET']) # Metódo para listar frutas
 def mostrar_todas_frutas():
     return jsonify(frutas) # Retorna a lista como JSON
+
+# Listar itens por ID
+@app.route('/frutas/<int:id>', methods=['GET']) # Retorna a fruta pelo ID
+def mostrar_frutas_id(id):
+    for fruta in frutas:
+        if fruta['id'] == id:
+            return jsonify(fruta)
