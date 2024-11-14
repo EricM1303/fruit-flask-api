@@ -34,3 +34,11 @@ def mostrar_frutas_id(id):
     for fruta in frutas:
         if fruta['id'] == id:
             return jsonify(fruta)
+        
+        # Adicionar itens
+@app.route('/frutas', methods=['POST']) # Adiciona uma fruta à lista
+def adicionar_frutas():
+    nova_fruta = request.get_json()
+    frutas.append(nova_fruta)
+
+    return jsonify(nova_fruta)
