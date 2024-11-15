@@ -35,13 +35,22 @@ def mostrar_frutas_id(id):
         if fruta['id'] == id:
             return jsonify(fruta)
         
-        # Adicionar itens
+# Adicionar itens
 @app.route('/frutas', methods=['POST']) # Adiciona uma fruta à lista
 def adicionar_frutas():
     nova_fruta = request.get_json()
     frutas.append(nova_fruta)
 
     return jsonify(nova_fruta)
+
+# Alterar itens por ID
+@app.route('/frutas/<int:id>', methods=['PUT'])
+def editar_livros(id):
+    for fruta in frutas: 
+        if fruta['id'] == id: # Condição para verificar o número digitado e altera-lo.
+            fruta.update(request.get_json())
+            return jsonify(fruta)
+        
 
 
 
