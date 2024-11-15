@@ -51,6 +51,14 @@ def editar_livros(id):
             fruta.update(request.get_json())
             return jsonify(fruta)
         
+# Remover itens por ID
+@app.route('/frutas/<int:id>', methods=['DELETE'])
+def deletar_frutas(id):
+    for indice, fruta in enumerate(frutas): # Itera em indice e fruta, para ver o index de ambos.
+        if fruta.get('id') == id: 
+            del frutas[indice] # No dictionary, apaga o indice do ID digitado.
+            return jsonify(frutas, {"mensagem": "Fruta {} removida com sucesso!".format(indice)}) # Retorna o estado atual, e qual foi a remoção.
+        
 
 
 
