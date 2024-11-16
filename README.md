@@ -15,9 +15,10 @@ Para realizar essas operações, siga o passo a passo abaixo.
 ***  
 
 ## 📋 Requisitos e instalação
-* 🛠️ Postman instalado na máquina ou outra IDE para requisições  
+* 🛠️ [Postman](https://www.postman.com/downloads/)
+ instalado na máquina ou outra IDE para requisições  
 * 🌐 Porta 3000 liberada no localhost (máquina atual) 
-* ⚙️ Python instalado na máquina
+* ⚙️ [Python](https://www.python.org/downloads/) instalado na máquina
     * Clonar repositório e inicializar o **main.py** (run).
 ***  
 
