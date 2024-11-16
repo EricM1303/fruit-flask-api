@@ -20,6 +20,12 @@ frutas = [
         'nome': 'uva',
         'cor': 'roxa',
         'quantidade': 8
+    },
+    {
+        'id': 4,
+        'nome': 'laranja',
+        'cor': 'laranja',
+        'quantidade': 20
     }
 ]
 
