@@ -51,7 +51,7 @@ def adicionar_frutas():
 
 # Alterar itens por ID
 @app.route('/frutas/<int:id>', methods=['PUT'])
-def editar_livros(id):
+def editar_frutas(id):
     for fruta in frutas: 
         if fruta['id'] == id: # Condição para verificar o número digitado e altera-lo.
             fruta.update(request.get_json())
