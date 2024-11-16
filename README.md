@@ -14,10 +14,11 @@ Para realizar essas operações, siga o passo a passo abaixo.
 
 ***  
 
-## 📋 Requisitos  
+## 📋 Requisitos e instalação
 * 🛠️ Postman instalado na máquina ou outra IDE para requisições  
-* 🌐 Porta 3000 liberada no localhost (máquina atual)  
-
+* 🌐 Porta 3000 liberada no localhost (máquina atual) 
+* ⚙️ Python instalado na máquina
+    * Clonar repositório e inicializar o **main.py** (run).
 ***  
 
 ## 🚀 Como utilizar a API  
