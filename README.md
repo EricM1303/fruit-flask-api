@@ -40,8 +40,7 @@ Para realizar essas operações, siga o passo a passo abaixo.
 
 ### 🗑️ Deletar frutas:  
 * Para deletar uma fruta específica: ```localhost:3000/frutas/id``` com o método *DELETE*.  
-* Para deletar todas as frutas: ```localhost:3000/frutas``` com o método *DELETE*.  
-
+ 
 ***  
 
 ### 👨‍💻 Autor do projeto  
